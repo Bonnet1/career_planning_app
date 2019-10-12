@@ -1,6 +1,6 @@
 # FiftyBackards Career Planning Application
 
-The app is designed to help the user select the best career option based on experience to date and teh career paths of people they look up to.
+The app is designed to help the user select the best career option based on experience to date and the career paths of people they aspire to be like.
 
 To be covered at a later date:
 
