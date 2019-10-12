@@ -1,9 +1,8 @@
-# README
+# FiftyBackards Career Planning Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The app is designed to help the user select the best career option based on experience to date and teh career paths of people they look up to.
 
-Things you may want to cover:
+To be covered at a later date:
 
 * Ruby version
 
