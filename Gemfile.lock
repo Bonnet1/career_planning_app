@@ -54,6 +54,8 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.2)
@@ -72,6 +74,8 @@ GEM
     erubi (1.9.0)
     excon (0.67.0)
     execjs (2.7.0)
+    faker (2.6.0)
+      i18n (>= 1.6, < 1.8)
     ffi (1.11.1)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
@@ -399,6 +403,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    will_paginate (3.1.8)
     xml-simple (1.1.5)
     xmlrpc (0.3.0)
 
@@ -409,8 +414,10 @@ DEPENDENCIES
   bcrypt
   bootsnap (>= 1.1.0)
   bootstrap-sass (>= 3.4.1)
+  bootstrap-will_paginate
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
+  faker (= 2.6.0)
   fog (= 1.42)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
@@ -432,6 +439,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (= 3.2.0)
   web-console (>= 3.3.0)
+  will_paginate
 
 RUBY VERSION
    ruby 2.6.0p0
