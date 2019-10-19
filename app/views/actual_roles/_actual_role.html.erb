@@ -1,0 +1,18 @@
+<li id="actual_role-<%= actual_role.id %>">
+  <%= link_to gravatar_for(actual_role.user, size: 50), actual_role.user %>
+  <span class="user"><%= link_to actual_role.user.name, actual_role.user %></span>
+  <span class="content">
+  Organization: <%= actual_role.organization %><p>
+  Role: <%= actual_role.role %><p>
+  Details: <%= actual_role.details %><p>
+  Start Date: <%= actual_role.start_date %><p>
+  End Date: <%= actual_role.end_date %><p>
+  </span>
+  <span class="timestamp">
+    updated <%= time_ago_in_words(actual_role.created_at) %> ago.<p>
+    <% if current_user?(actual_role.user) %>
+    <%= link_to "delete", actual_role, method: :delete,
+                                     data: { confirm: "You sure?" } %>
+  <% end %>
+  </span>
+</li>

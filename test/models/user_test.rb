@@ -75,5 +75,13 @@ class UserTest < ActiveSupport::TestCase
   test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?(:remember, '')
   end
+
+  test "associated actuals roles should be destroyed" do
+    @user.save
+    @user.actual_roles.create!(organization: "Lorem ipsum", role: "Lorem ipsum", details: "Lorem ipsum")
+    assert_difference 'ActualRole.count', -1 do
+      @user.destroy
+    end
+  end
   
 end

@@ -8,4 +8,13 @@
       </h1>
     </section>
   </aside>
+  <div class="col-md-8">
+    <% if @user.actual_roles.any? %>
+      <h3>Career History (<%= @user.actual_roles.count %> roles)</h3>
+      <ol class="actual_roles">
+        <%= render @actual_roles %>
+      </ol>
+      <%= will_paginate @actual_roles %>
+    <% end %>
+  </div>
 </div>
